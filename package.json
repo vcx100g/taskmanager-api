@@ -1,0 +1,31 @@
+{
+  "name": "task-manager-app",
+  "version": "1.0.0",
+  "description": "Managing your task never be easy",
+  "main": "app.js",
+  "engines": {
+    "node": "10.15.3"
+  },
+  "scripts": {
+    "start": "node src/api.js",
+    "dev": "env-cmd ./config/dev.env nodemon src/api.js -e js"
+  },
+  "author": "Jack Ong",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.16.4",
+    "heroku": "^7.22.7",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.19",
+    "multer": "^1.4.1",
+    "sharp": "^0.22.0",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2",
+    "nodemon": "^1.18.10"
+  }
+}
