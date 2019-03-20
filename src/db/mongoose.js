@@ -1,11 +1,8 @@
 const mongoose = require('mongoose')
 
 const mongoURL = process.env.MONGODB_URL
-const collection = 'task-manager'
 
-const connectURL = `${mongoURL}${collection}`
-
-mongoose.connect(connectURL, {
+mongoose.connect(mongoURL, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: false
