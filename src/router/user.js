@@ -14,7 +14,7 @@ router.post('/users', async (req, res) => {
     try {
         await user.save()
         sendWelcomeEmail(user.email, user.name)
-        const token = user.generateAuthToken()
+        const token = await user.generateAuthToken()
         res.status(201).send({ user, token })
     } catch (error) {
         res.status(400).send(error)
@@ -71,7 +71,7 @@ router.patch('/users/me', auth, async (req, res) => {
     const isValidOperation = updates.every((key) => allowedUpdates.includes(key))
 
     if (!isValidOperation) {
-        return res.status(404).send({ error: `Invalid object keys: '${updates}'` })
+        return res.status(400).send({ error: `Invalid object keys: '${updates}'` })
     }
 
     try {
@@ -113,7 +113,7 @@ router.delete('/users/:id', auth, async (req, res) => {
     }
 })
 
-router.delete('/user/me', auth, async (req, res) => {
+router.delete('/users/me', auth, async (req, res) => {
     try {
         await req.user.remove()
         sendCancelEmail(req.user.email, req.user.name)
@@ -177,7 +177,7 @@ const avatar = multer({
     }
 })
 
-router.post('/user/me/avatar', auth, avatar.single('avatar'), async (req, res) => {
+router.post('/users/me/avatar', auth, avatar.single('avatar'), async (req, res) => {
     // res.send({ message: 'avatar success upload' })
     const buffer = await sharp(req.file.buffer).resize({ width: 250, height: 250 }).png().toBuffer()
 
@@ -189,13 +189,13 @@ router.post('/user/me/avatar', auth, avatar.single('avatar'), async (req, res) =
     res.status(400).send({ error: error.message })
 })
 
-router.delete('/user/me/avatar', auth, async (req, res) => {
+router.delete('/users/me/avatar', auth, async (req, res) => {
     req.user.avatar = undefined
     await req.user.save()
     res.send()
 })
 
-router.get('/user/:id/avatar', async (req, res) => {
+router.get('/users/:id/avatar', async (req, res) => {
     try {
         const user = await User.findById(req.params.id)
 
