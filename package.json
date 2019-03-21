@@ -8,7 +8,14 @@
   },
   "scripts": {
     "start": "node src/api.js",
-    "dev": "env-cmd ./config/dev.env nodemon src/api.js -e js"
+    "dev": "env-cmd ./config/dev.env nodemon src/api.js -e js",
+    "test": "env-cmd ./config/test.env jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "<rootDir>/(build|docs|node_modules)/"
+    ]
   },
   "author": "Jack Ong",
   "license": "ISC",
@@ -26,6 +33,8 @@
   },
   "devDependencies": {
     "env-cmd": "^8.0.2",
-    "nodemon": "^1.18.10"
+    "jest": "^24.5.0",
+    "nodemon": "^1.18.10",
+    "supertest": "^4.0.2"
   }
 }
