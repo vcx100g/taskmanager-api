@@ -9,7 +9,9 @@
   "scripts": {
     "start": "node src/api.js",
     "dev": "env-cmd ./config/dev.env nodemon src/api.js -e js",
-    "test": "env-cmd ./config/test.env jest --watch"
+    "test": "env-cmd ./config/test.env jest --watch",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "jest": {
     "testEnvironment": "node",
@@ -26,15 +28,17 @@
     "heroku": "^7.22.7",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.1.13",
-    "mongoose": "^5.4.19",
+    "mongoose": "^5.7.5",
     "multer": "^1.4.1",
     "sharp": "^0.22.0",
-    "validator": "^10.11.0"
+    "validator": "^10.11.0",
+    "snyk": "^1.298.1"
   },
   "devDependencies": {
     "env-cmd": "^8.0.2",
     "jest": "^24.5.0",
     "nodemon": "^1.18.10",
     "supertest": "^4.0.2"
-  }
+  },
+  "snyk": true
 }

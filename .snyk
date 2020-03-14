@@ -1,0 +1,164 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - heroku > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-addons-v5 > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-apps-v5 > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-buildpacks > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-certs-v5 > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-config > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-oauth-v5 > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-orgs-v5 > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-pg-v5 > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-ps > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-spaces > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @oclif/plugin-commands > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @oclif/plugin-not-found > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @oclif/plugin-update > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - mongoose > async > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-auth > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-autocomplete > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-buildpacks > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-ci > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-config > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-git > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-ps > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-status > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @oclif/plugin-commands > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @oclif/plugin-not-found > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @oclif/plugin-update > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @oclif/plugin-which > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-addons-v5 > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-apps-v5 > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-buildpacks > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-certs-v5 > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-run-v5 > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-ci-v5 > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-container-registry-v5 > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-local-v5 > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-oauth-v5 > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-orgs-v5 > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-pg-v5 > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-pipelines-v5 > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-ps-exec > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-redis-v5 > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-spaces > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-webhooks-v5 > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-apps-v5 > inquirer > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-certs-v5 > inquirer > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-ci > inquirer > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-container-registry-v5 > inquirer > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-orgs-v5 > inquirer > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-pipelines-v5 > inquirer > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-config > edit-string > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-pg-v5 > @heroku-cli/plugin-addons > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @oclif/plugin-plugins > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-apps-v5 > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-auth > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-autocomplete > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @oclif/plugin-legacy > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-buildpacks > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-certs > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-ci > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-run-v5 > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-ci-v5 > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-config > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-git > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-local-v5 > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-orgs-v5 > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-pipelines-v5 > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-ps > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-spaces > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-status > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-webhooks-v5 > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-ci-v5 > @heroku-cli/plugin-pipelines > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-ci-v5 > @heroku-cli/plugin-run-v5 > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-pg-v5 > @heroku-cli/plugin-addons > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-ps-exec > heroku-exec-util > heroku-cli-util > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-ci-v5 > @heroku-cli/plugin-pipelines > inquirer > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-buildpacks > @oclif/plugin-legacy > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-ci-v5 > @heroku-cli/plugin-pipelines > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
+    - heroku > @heroku-cli/plugin-ci-v5 > @heroku-cli/plugin-run-v5 > @heroku-cli/command > cli-ux > lodash:
+        patched: '2020-03-14T15:56:25.950Z'
