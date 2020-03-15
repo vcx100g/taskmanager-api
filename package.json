@@ -20,7 +20,7 @@
   "author": "Jack Ong",
   "license": "ISC",
   "dependencies": {
-    "@sendgrid/mail": "^6.3.1",
+    "@sendgrid/mail": "^6.5.4",
     "bcryptjs": "^2.4.3",
     "express": "^4.16.4",
     "heroku": "^7.22.7",
